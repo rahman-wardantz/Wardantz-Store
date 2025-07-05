@@ -5,7 +5,7 @@
         "price": 25000,
         "image": "https://vignette.wikia.nocookie.net/spongebob/images/7/7d/Mermaid_Man_vs._SpongeBob_126.png/revision/latest?cb=20200106222204",
         "category": "spongebob",
-        "description": "Burger legendaris dari Krusty Krab, favorit warga Bikini Bottom. Tidak untuk dimakan, hanya replika!"
+        "description": "Replika burger Krabby Patty yang terkenal dari Krusty Krab, ikon kuliner di Bikini Bottom."
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "price": 35000,
         "image": "https://images6.fanpop.com/image/photos/39100000/Spongebob-Squarepants-spongebob-squarepants-39145494-500-375.jpg",
         "category": "spongebob",
-        "description": "Topi kerja khas Spongebob saat menjadi koki di Krusty Krab. Cocok untuk cosplay dan koleksi."
+        "description": "Topi resmi staf Krusty Krab seperti yang dikenakan Spongebob saat bekerja."
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "price": 45000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/1/19/Gary%27s_Shell.png",
         "category": "spongebob",
-        "description": "Miniatur cangkang Gary, peliharaan kesayangan Spongebob. Lucu untuk hiasan meja."
+        "description": "Miniatur cangkang Gary, siput peliharaan kesayangan Spongebob."
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "price": 60000,
         "image": "https://tse4.mm.bing.net/th/id/OIP.X29YokdFBdccGlEWcCSeuwHaFq?rs=1&pid=ImgDetMain&o=7&rm=3",
         "category": "spongebob",
-        "description": "Kaos coklat polos seperti yang selalu dipakai Squidward. Nyaman dan unik!"
+        "description": "Kaos coklat polos seperti yang selalu dipakai Squidward Tentacles."
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "price": 30000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/0/04/Your_Shoe%27s_Untied_184.png",
         "category": "spongebob",
-        "description": "Jaring ubur-ubur milik Patrick, siap untuk petualangan di Jellyfish Fields."
+        "description": "Es krim favorit Patrick Star yang sering muncul di serial Spongebob."
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "price": 120000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/1/12/Wet_Painters_131.png",
         "category": "spongebob",
-        "description": "Miniatur rumah nanas di bawah laut, tempat tinggal Spongebob. Ikonik dan lucu!"
+        "description": "Gadget unik milik Patrick Star yang sering digunakan dalam petualangan konyolnya."
     },
     {
         "id": 7,
@@ -53,6 +53,6 @@
         "price": 85000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/c/c4/New_Signature_Picture.gif",
         "category": "spongebob",
-        "description": "Replika saxophone milik Squidward, cocok untuk koleksi penggemar musik dan Spongebob."
+        "description": "Jaring khusus untuk menangkap ubur-ubur, seperti yang digunakan Spongebob dan Patrick."
     }
 ]
