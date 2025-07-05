@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardantz Store - Belanja Online Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header/Navbar -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-store-alt text-2xl"></i>
+                <h1 class="text-2xl font-bold">Wardantz Store</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6" aria-label="Navigasi utama">
+                <a href="#" class="hover:text-blue-200 transition">Beranda</a>
+                <a href="#products" class="hover:text-blue-200 transition">Produk</a>
+                <a href="#features" class="hover:text-blue-200 transition">Fitur</a>
+                <a href="#testimonials" class="hover:text-blue-200 transition">Ulasan</a>
+                <a href="#contact" class="hover:text-blue-200 transition">Kontak</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="search-btn" class="p-2 rounded-full hover:bg-blue-700 transition" aria-label="Cari">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="cart-btn" class="relative p-2 rounded-full hover:bg-blue-700 transition" aria-label="Keranjang">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </button>
+                <button id="menu-btn" class="md:hidden p-2 rounded-full hover:bg-blue-700 transition" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden gradient-bg absolute w-full left-0 px-4 pb-4 shadow-lg">
+            <a href="#" class="block py-2 hover:text-blue-200 transition">Beranda</a>
+            <a href="#products" class="block py-2 hover:text-blue-200 transition">Produk</a>
+            <a href="#features" class="block py-2 hover:text-blue-200 transition">Fitur</a>
+            <a href="#testimonials" class="block py-2 hover:text-blue-200 transition">Ulasan</a>
+            <a href="#contact" class="block py-2 hover:text-blue-200 transition">Kontak</a>
+        </div>
+        <!-- Search Bar -->
+        <div id="search-bar" class="hidden container mx-auto px-4 py-3 bg-blue-900">
+            <div class="flex">
+                <input type="text" placeholder="Cari produk..." class="flex-grow px-4 py-2 rounded-l-lg focus:outline-none text-gray-800">
+                <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg text-white" aria-label="Cari">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Produk Premium di Ujung Jari Anda</h2>
+                <p class="text-xl mb-6 text-blue-100">Temukan tren terbaru dan produk eksklusif hanya di Wardantz Store. Kualitas yang dapat Anda percaya.</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/736/450/large_2x/supermarket-indoor-anime-visual-novel-game-generate-ai-photo.jpg" alt="Anime style supermarket interior with neatly arranged shelves and bright lighting creating a welcoming and cheerful shopping atmosphere" class="rounded-lg shadow-2xl floating max-w-md w-full">
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Mengapa Memilih Wardantz Store?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shipping-fast text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">Pengiriman Cepat</h3>
+                    <p class="text-gray-600">Produk Anda dikirim dalam 24 jam ke kota besar. Kami menghargai waktu Anda.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">Pembayaran Aman</h3>
+                    <p class="text-gray-600">Gateway pembayaran 100% aman dengan berbagai pilihan. Data Anda selalu terlindungi.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-headset text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-800">Dukungan 24/7</h3>
+                    <p class="text-gray-600">Tim layanan pelanggan kami siap membantu Anda kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Produk Unggulan</h2>
+            <div class="flex justify-center mb-8">
+                <div class="flex space-x-2 bg-blue-100 p-1 rounded-full">
+                    <button class="category-btn px-4 py-2 rounded-full bg-blue-600 text-white" data-category="all">Semua</button>
+                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="electronics">Elektronik</button>
+                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="fashion">Fashion</button>
+                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="home">Rumah</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-list">
+                <!-- Produk akan dimuat dinamis oleh JS -->
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Apa Kata Pelanggan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Belanja di sini terasa seperti perjalanan panjang yang menyenangkan. Produk berkualitas, seperti ramuan terbaik yang pernah kutemui." </p>
+                    <div class="flex items-center">
+                        <img src="https://cdn.myanimelist.net/images/characters/7/525105.jpg" alt="Frieren" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-blue-800">Frieren</h4>
+                            <p class="text-sm text-gray-500">Penyihir Elf</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Pelayanan di toko ini cepat sekali, bahkan lebih cepat dari sihirku sendiri. Aku jadi ingin belanja lagi!"</p>
+                    <div class="flex items-center">
+                        <img src="https://cdn.myanimelist.net/r/42x62/images/characters/13/519083.webp?s=d6b0bc6e5279aeaaf198872e43dadd41" alt="Fern" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-blue-800">Fern</h4>
+                            <p class="text-sm text-gray-500">Penyihir Muda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Toko ini seperti party yang solid—semua kebutuhan tersedia dan selalu bisa diandalkan. Sangat direkomendasikan!"</p>
+                    <div class="flex items-center">
+                        <img src="https://cdn.myanimelist.net/r/42x62/images/characters/2/523292.webp?s=3a5675d9e27c70e7f3dbf926173e5208" alt="Stark" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-semibold text-blue-800">Stark</h4>
+                            <p class="text-sm text-gray-500">Petarung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Hubungi Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Hubungi Kami</h3>
+                    <p class="text-gray-600 mb-6">Ada pertanyaan atau masukan? Kami siap membantu Anda!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-800">Alamat</h4>
+                                <p class="text-gray-600">Baturetno, Wonogiri, Jawa Tengah</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-800">Telepon</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-800">Email</h4>
+                                <p class="text-gray-600">support@wardantzstore.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Wardantz Store</h3>
+                    <p class="text-blue-200">Destinasi belanja online premium untuk produk berkualitas dan layanan terbaik.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#products" class="text-blue-200 hover:text-white transition">Produk</a></li>
+                        <li><a href="#features" class="text-blue-200 hover:text-white transition">Fitur</a></li>
+                        <li><a href="#testimonials" class="text-blue-200 hover:text-white transition">Ulasan</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Layanan Pelanggan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Kebijakan Pengiriman</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Kebijakan Pengembalian</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Metode Pembayaran</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-visa text-2xl text-blue-800"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-mastercard text-2xl text-red-600"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-paypal text-2xl text-blue-500"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-apple-pay text-2xl text-black"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-amazon-pay text-2xl text-orange-500"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-stripe text-2xl text-purple-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-200">
+                <p>&copy; 2025 Wardantz Store. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Shopping Cart Sidebar, Quick View Modal, dan script sudah dipisah ke file eksternal untuk maintainability -->
+</body>
+</html>

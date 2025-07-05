@@ -1,0 +1,69 @@
+// Sample product data
+const products = [
+    {
+        id: 1,
+        title: "Wireless Bluetooth Headphones",
+        price: 89.99,
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "electronics",
+        description: "Premium wireless headphones with noise cancellation and 30-hour battery life."
+    },
+    {
+        id: 2,
+        title: "Smart Watch Pro",
+        price: 199.99,
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "electronics",
+        description: "Advanced smartwatch with health monitoring and GPS tracking."
+    },
+    {
+        id: 3,
+        title: "Premium Leather Wallet",
+        price: 49.99,
+        image: "https://images.unsplash.com/photo-1591561954555-607968c989ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "fashion",
+        description: "Genuine leather wallet with multiple card slots and RFID protection."
+    },
+    {
+        id: 4,
+        title: "Cotton T-Shirt",
+        price: 24.99,
+        image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "fashion",
+        description: "Comfortable 100% cotton t-shirt available in multiple colors."
+    },
+    {
+        id: 5,
+        title: "Ceramic Coffee Mug",
+        price: 14.99,
+        image: "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "home",
+        description: "Beautiful ceramic mug with comfortable handle and 12oz capacity."
+    },
+    {
+        id: 6,
+        title: "Wireless Charging Pad",
+        price: 29.99,
+        image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "electronics",
+        description: "Fast wireless charging pad compatible with all Qi-enabled devices."
+    },
+    {
+        id: 7,
+        title: "Decorative Throw Pillow",
+        price: 19.99,
+        image: "https://images.unsplash.com/photo-1579656592043-507f9da07a6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "home",
+        description: "Soft decorative pillow with removable cover for easy cleaning."
+    },
+    {
+        id: 8,
+        title: "Running Shoes",
+        price: 79.99,
+        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        category: "fashion",
+        description: "Lightweight running shoes with cushioned soles for maximum comfort."
+    }
+];
+
+// ...existing JavaScript logic for cart, rendering, and event listeners...
