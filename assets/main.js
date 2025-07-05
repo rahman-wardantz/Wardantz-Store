@@ -15,6 +15,21 @@ async function loadProducts() {
     }
 }
 
+// Render produk ke halaman
+function renderProducts(products) {
+    const list = document.getElementById('product-list');
+    if (!list) return;
+    list.innerHTML = products.map(product => `
+        <div class="bg-white rounded shadow p-4 flex flex-col">
+            <img src="${product.image}" alt="${product.title}" class="mb-4 rounded h-40 object-cover">
+            <h3 class="font-bold text-lg mb-2">${product.title}</h3>
+            <p class="text-gray-600 mb-2">${product.description}</p>
+            <div class="font-semibold text-blue-700 mb-4">Rp${product.price.toLocaleString('id-ID')}</div>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Tambah ke Keranjang</button>
+        </div>
+    `).join('');
+}
+
 // Inisialisasi store
 function initStore() {
     loadProducts();
