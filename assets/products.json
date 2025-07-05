@@ -4,7 +4,7 @@
         "title": "Krabby Patty",
         "price": 25000,
         "image": "https://vignette.wikia.nocookie.net/spongebob/images/7/7d/Mermaid_Man_vs._SpongeBob_126.png/revision/latest?cb=20200106222204",
-        "category": "spongebob",
+        "category": "food",
         "description": "Replika burger Krabby Patty yang terkenal dari Krusty Krab, ikon kuliner di Bikini Bottom."
     },
     {
@@ -12,7 +12,7 @@
         "title": "Topi Krusty Krab",
         "price": 35000,
         "image": "https://images6.fanpop.com/image/photos/39100000/Spongebob-Squarepants-spongebob-squarepants-39145494-500-375.jpg",
-        "category": "spongebob",
+        "category": "fashion",
         "description": "Topi resmi staf Krusty Krab seperti yang dikenakan Spongebob saat bekerja."
     },
     {
@@ -20,7 +20,7 @@
         "title": "Cangkang Gary",
         "price": 45000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/1/19/Gary%27s_Shell.png",
-        "category": "spongebob",
+        "category": "home",
         "description": "Miniatur cangkang Gary, siput peliharaan kesayangan Spongebob."
     },
     {
@@ -28,7 +28,7 @@
         "title": "Baju Squidward",
         "price": 60000,
         "image": "https://tse4.mm.bing.net/th/id/OIP.X29YokdFBdccGlEWcCSeuwHaFq?rs=1&pid=ImgDetMain&o=7&rm=3",
-        "category": "spongebob",
+        "category": "fashion",
         "description": "Kaos coklat polos seperti yang selalu dipakai Squidward Tentacles."
     },
     {
@@ -36,7 +36,7 @@
         "title": "Ice Cream Patrick",
         "price": 30000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/0/04/Your_Shoe%27s_Untied_184.png",
-        "category": "spongebob",
+        "category": "food",
         "description": "Es krim favorit Patrick Star yang sering muncul di serial Spongebob."
     },
     {
@@ -44,7 +44,7 @@
         "title": "Patrick Technology",
         "price": 120000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/1/12/Wet_Painters_131.png",
-        "category": "spongebob",
+        "category": "electronics",
         "description": "Gadget unik milik Patrick Star yang sering digunakan dalam petualangan konyolnya."
     },
     {
@@ -52,7 +52,7 @@
         "title": "Jaring Ubur-Ubur",
         "price": 85000,
         "image": "https://static.wikia.nocookie.net/spongebob/images/c/c4/New_Signature_Picture.gif",
-        "category": "spongebob",
+        "category": "electronics",
         "description": "Jaring khusus untuk menangkap ubur-ubur, seperti yang digunakan Spongebob dan Patrick."
     }
 ]

@@ -30,6 +30,25 @@ function renderProducts(products) {
     `).join('');
 }
 
+// Tambahkan fungsi untuk filter kategori dan event listener tombol kategori
+function setupEventListeners() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    categoryButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Highlight tombol aktif
+            categoryButtons.forEach(b => b.classList.remove('bg-blue-600', 'text-white'));
+            this.classList.add('bg-blue-600', 'text-white');
+            // Ambil kategori dari tombol
+            const category = this.getAttribute('data-category');
+            if (category === 'all') {
+                renderProducts(products);
+            } else {
+                renderProducts(products.filter(p => p.category === category));
+            }
+        });
+    });
+}
+
 // Inisialisasi store
 function initStore() {
     loadProducts();
