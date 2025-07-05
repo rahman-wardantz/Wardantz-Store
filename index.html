@@ -101,17 +101,71 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Produk Unggulan</h2>
             <div class="flex justify-center mb-8">
-                <div class="flex space-x-2 bg-blue-100 p-1 rounded-full">
-                    <button class="category-btn px-4 py-2 rounded-full bg-blue-600 text-white" data-category="all">Semua</button>
-                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="electronics">Elektronik</button>
-                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="fashion">Fashion</button>
-                    <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="home">Rumah</button>
-                </div>
+            <div class="flex space-x-2 bg-blue-100 p-1 rounded-full">
+                <button class="category-btn px-4 py-2 rounded-full bg-blue-600 text-white" data-category="all">Semua</button>
+                <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="electronics">Elektronik</button>
+                <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="fashion">Fashion</button>
+                <button class="category-btn px-4 py-2 rounded-full hover:bg-blue-200 transition" data-category="home">Rumah</button>
+            </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-list">
-                <!-- Produk akan dimuat dinamis oleh JS -->
+            <!-- Produk akan dimuat dinamis oleh JS -->
             </div>
         </div>
+        <script>
+        // Produk anime Frieren
+        const frierenProducts = [
+          {
+            id: 101,
+            title: "Tongkat Sihir Frieren",
+            price: 299000,
+            image: "https://cdn.myanimelist.net/images/characters/7/525105.jpg",
+            category: "anime",
+            description: "Tongkat sihir replika milik Frieren, cocok untuk koleksi dan cosplay."
+          },
+          {
+            id: 102,
+            title: "Jubah Elf Frieren",
+            price: 499000,
+            image: "https://static.wikia.nocookie.net/sousou-no-frieren/images/2/2e/Frieren_anime.png",
+            category: "anime",
+            description: "Jubah biru elegan seperti yang dikenakan Frieren dalam petualangannya."
+          },
+          {
+            id: 103,
+            title: "Figure Frieren Limited Edition",
+            price: 899000,
+            image: "https://cdn.myanimelist.net/images/characters/7/525105.jpg",
+            category: "anime",
+            description: "Figure Frieren edisi terbatas, detail tinggi dan eksklusif untuk penggemar."
+          }
+        ];
+
+        function renderProducts(products) {
+          const productList = document.getElementById('product-list');
+          productList.innerHTML = '';
+          if (!products || products.length === 0) {
+            productList.innerHTML = '<div class="col-span-full text-center text-gray-500">Tidak ada produk ditemukan.</div>';
+            return;
+          }
+          products.forEach(product => {
+            productList.innerHTML += `
+              <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4 flex flex-col">
+                <img src="${product.image}" alt="${product.title}" class="rounded-lg mb-4 h-48 w-full object-cover">
+                <h3 class="text-lg font-semibold text-blue-800 mb-2">${product.title}</h3>
+                <p class="text-gray-600 mb-2">${product.category}</p>
+                <p class="text-blue-600 font-bold text-xl mb-4">Rp${product.price.toLocaleString('id-ID')}</p>
+                <button class="add-to-cart-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition" data-id="${product.id}">
+                  <i class="fas fa-cart-plus mr-2"></i>Tambah ke Keranjang
+                </button>
+              </div>
+            `;
+          });
+        }
+
+        // Tampilkan produk Frieren saat halaman dimuat
+        renderProducts(frierenProducts);
+        </script>
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="py-16 bg-white">
